@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Caveat", cursive;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slider__down {
+  height: 25%;
+  width: 500%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+
+}
+.slider__down div {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  bottom: 0;
+}
+.slider__down div h1 {
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 18%;
+  left: 75%;
+}
+.slider__up {
+  height: 75%;
+  width: 500%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider__up div {
+  height: 100%;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.slider__buttons {
+ 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 25%;
+  left: 44%;
+  transform: translate(50%, 50%);
+}
+.slider__buttons .left-btn,
+.slider__buttons .right-btn {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 40px;
+  padding: 15px;
+  display: flex;
+}
+.slider__buttons .left-btn {
+  justify-content: start;
+  align-items: flex-end;
+  border-top-left-radius: 50%;
+}
+.slider__buttons .right-btn {
+  justify-content: end;
+  align-items: flex-start;
+  border-bottom-right-radius: 50%;
+}
