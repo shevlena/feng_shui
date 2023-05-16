@@ -17,7 +17,6 @@ body {
 }
 .slider__down {
   height: 25%;
-  width: 500%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -41,7 +40,6 @@ body {
 }
 .slider__up {
   height: 75%;
-  width: 500%;
   position: absolute;
   top: 0;
   display: flex;
